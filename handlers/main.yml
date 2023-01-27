@@ -3,6 +3,6 @@
 - name: Restart service keepalived
   systemd:
     state: restarted
-    enabled: yes
-    daemon_reload: yes
+    enabled: true
+    daemon_reload: true
     name: keepalived

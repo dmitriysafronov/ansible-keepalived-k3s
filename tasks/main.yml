@@ -1,13 +1,13 @@
 ---
 
 - name: Create keepalived service override dir
-  file:
+  ansible.legacy.file:
     path: "{{ akk3s_systemd_dir }}/keepalived.service.d"
     state: directory
     mode: '0755'
 
 - name: Add dependency to keepalived service
-  copy:
+  ansible.legacy.copy:
     content: |
       [Unit]
       Requisite=k3s.service
