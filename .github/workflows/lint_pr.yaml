@@ -1,6 +1,6 @@
 ---
 
-name: Lint pr
+name: Lint PR
 
 'on':
   pull_request:
