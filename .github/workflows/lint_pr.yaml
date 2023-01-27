@@ -2,7 +2,7 @@
 
 name: Lint pr
 
-on:
+'on':
   pull_request:
     branches:
       - master
