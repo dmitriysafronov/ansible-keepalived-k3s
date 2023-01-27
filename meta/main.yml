@@ -1,6 +1,7 @@
 ---
 
 galaxy_info:
+  role_name: ansible_keepalived_k3s
   author: Dmitriy Safronov <zimniy@cyberbrain.pw>
   description: Systemd keepalived dependency - k3s
   # company: your company (optional)
