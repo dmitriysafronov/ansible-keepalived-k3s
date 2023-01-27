@@ -1,7 +1,7 @@
 ---
 
 - name: Restart service keepalived
-  systemd:
+  ansible.legacy.systemd:
     state: restarted
     enabled: true
     daemon_reload: true
