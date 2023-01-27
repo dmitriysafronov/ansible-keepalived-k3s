@@ -2,7 +2,7 @@
 
 name: Lint scheduled
 
-on:
+'on':
   schedule:
     # Run on the 10th of each month at noon.
     - cron: '00 12 10 * *'
