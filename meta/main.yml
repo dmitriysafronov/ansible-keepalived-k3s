@@ -2,6 +2,7 @@
 
 galaxy_info:
   role_name: ansible_keepalived_k3s
+  namespace: dmitriysafronov
   author: Dmitriy Safronov <zimniy@cyberbrain.pw>
   description: Systemd keepalived dependency - k3s
   # company: your company (optional)
