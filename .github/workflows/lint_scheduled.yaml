@@ -1,6 +1,6 @@
 ---
 
-name: Lint scheduled
+name: Lint Scheduled
 
 'on':
   schedule:
