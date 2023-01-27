@@ -1,0 +1,20 @@
+- name: Create keepalived service override dir
+  file:
+    path: "{{ akk3s_systemd_dir }}/keepalived.service.d"
+    state: directory
+    mode: '0755'
+
+- name: Add dependency to keepalived service
+  copy:
+    content: |
+      [Unit]
+      Requisite=k3s.service
+      After=k3s.service
+
+      [Install]
+      WantedBy=k3s.service
+    dest: "{{ akk3s_systemd_dir }}/keepalived.service.d/k3s.conf"
+    owner: root
+    group: root
+    mode: 0644
+  notify: Restart service keepalived
