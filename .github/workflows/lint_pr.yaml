@@ -29,6 +29,9 @@ jobs:
           cache: 'pip'
           cache-dependency-path: .requirements/${{ matrix.ansible }}.txt
 
+      - name: Install/upgrade pip, wheel
+        run: pip install --upgrade pip wheel
+
       - name: Install test dependencies
         run: pip3 install -r .requirements/${{ matrix.ansible }}.txt
 

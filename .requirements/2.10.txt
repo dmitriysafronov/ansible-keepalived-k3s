@@ -3,4 +3,3 @@ ansible>=2.10,<2.11
 ansible-lint<6.11
 yamllint
 pytest
-wheel
