@@ -18,5 +18,5 @@
     dest: "{{ akk3s_systemd_dir }}/keepalived.service.d/k3s.conf"
     owner: root
     group: root
-    mode: 0644
+    mode: '0644'
   notify: Restart service keepalived
